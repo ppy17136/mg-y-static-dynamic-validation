@@ -15,7 +15,7 @@ The study compares two public Mg-Y MEAM parameterizations using controlled ident
 - Archive file: `Reproducibility_Package.zip`
 - Integrity: byte-counted SHA-256 manifest included in the archive
 
-The DOI has been reserved and becomes active when the Zenodo record is published.
+The Zenodo record was published on August 5, 2026, and the DOI is active.
 
 ## Contents
 
