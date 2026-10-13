@@ -1,16 +1,15 @@
 # Third-party notices
 
-The reproducibility archive is a mixed collection. No blanket repository or archive license overrides the terms of third-party files.
+No blanket repository or archive license overrides the terms of third-party files.
 
-## Interatomic-potential files
+## Version 2.0.0
 
-- The Ahmad Mg-Y 2NN-MEAM distribution includes its original Common Development and Distribution License (CDDL) 1.0 notice in the archive. That notice governs the corresponding third-party files.
-- The Kim Mg-Y and Mg-Nd MEAM parameter files are retained to document the calculations and scientific provenance. No additional license is granted by the authors. Users should consult the original publications and source distributions before reuse.
+The data/code-only release contains no interatomic-potential or pseudopotential payloads. Existing notices in included code remain applicable. References to external simulation software do not grant rights to that software. Output-based reanalysis does not require running that external software.
 
-## Pseudopotential files
+## Historical version 1.0.0
 
-Quantum ESPRESSO UPF files from the PseudoDojo/ONCVPSP distributions are retained with provenance manifests, source URLs, citations, and SHA-256 checksums. No additional license is granted by the authors; the original providers' terms apply.
+The separate historical Zenodo archive has its own contents and provenance. The Ahmad Mg-Y 2NN-MEAM distribution includes its original Common Development and Distribution License (CDDL) 1.0 notice, governing the corresponding files. Kim Mg-Y and Mg-Nd parameter files and Quantum ESPRESSO UPF files retain their documented source terms; no additional rights are granted here. Consult the original publications, providers and included notices before reuse.
 
 ## Author-created materials
 
-Author-created scripts, processed data, tables, and documentation are not assigned a blanket open-source or open-data license in this repository. Contact the corresponding author for reuse permissions unless a specific file states otherwise.
+Author-created scripts, data and documentation are not assigned a blanket open-source or open-data license in this repository. Contact the corresponding author for reuse permissions unless a specific file states otherwise.
