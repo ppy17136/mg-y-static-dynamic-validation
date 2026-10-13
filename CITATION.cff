@@ -1,9 +1,10 @@
 cff-version: 1.2.0
-message: "If you use these materials, please cite the associated Zenodo record and manuscript."
-title: "Reproducibility package for Static DFT Agreement and Direction-Dependent Strain-Reversal Response Favor Different Mg-Y Interatomic Potentials: Identical-Start Tests"
+message: "Please cite the version-specific Zenodo record for the data used."
+title: "Data and analysis code for Static DFT Agreement and Protocol-Dependent Strain-Reversal Response in Mg–Y Interatomic Potentials"
 type: dataset
-version: 1.0.0
-doi: 10.5281/zenodo.21806152
+version: 2.0.0
+doi: 10.5281/zenodo.23331296
+date-released: 2026-10-13
 authors:
   - family-names: Shang
     given-names: Jia Bao
