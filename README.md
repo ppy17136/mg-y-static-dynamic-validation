@@ -1,40 +1,30 @@
-# Mg-Y static-dynamic validation under strain reversal
+# Mg-Y static references and protocol-dependent strain reversal
 
-Reproducibility index for the manuscript:
+Data and analysis index for **Static DFT Agreement and Protocol-Dependent Strain-Reversal Response in Mg-Y Interatomic Potentials**.
 
-> **Static DFT Agreement and Direction-Dependent Strain-Reversal Response Favor Different Mg-Y Interatomic Potentials: Identical-Start Tests**
+## Data releases
 
-## Scope
+- Version 2.0.0: [data and output-based analysis code](https://doi.org/10.5281/zenodo.23331296), eight modules, with archive and member checksums.
+- Version 1.0.0: [historical reproducibility archive](https://doi.org/10.5281/zenodo.21806152). This remains a separate historical record, not duplicated in version 2.0.0.
 
-The study compares two public Mg-Y MEAM parameterizations using controlled identical-start tests. Static finite-cell Quantum ESPRESSO site-energy checks and direction-dependent strain-reversal response favor different parameterizations. This repository is an index for the documented workflow; the immutable full archive is deposited on Zenodo.
+Use the version-specific DOI for the data actually analyzed. Version 2.0.0 supplements the historical release and does not replace every historical input.
 
-## Reproducibility archive
+## Version 2.0.0 contents
 
-- Zenodo DOI: [10.5281/zenodo.21806152](https://doi.org/10.5281/zenodo.21806152)
-- Version: `1.0.0`
-- Archive file: `Reproducibility_Package.zip`
-- Integrity: byte-counted SHA-256 manifest included in the archive
+The modules cover MD duration/thermostat controls, fast/slow stress comparisons, preparation energy, QE starting-site endpoint energies, finite-cell size checks, pure-CTB low-stress confirmation, vertical MEAM energy reanalysis, and structural-source preservation.
 
-The Zenodo record was published on August 5, 2026, and the DOI is active.
+Download the seven complete module ZIPs, five structural-archive parts, reassemble_structures.py, and accompanying README, RUN_WORKFLOW, FILE_INDEX and SHA256SUMS from Zenodo. Run `python -I -B reassemble_structures.py` to reconstruct and verify the original structural ZIP, then extract all eight modules as sibling directories and follow RUN_WORKFLOW.md. Seven numerical reanalysis entry points and one structural-integrity entry point passed local checks. These checks use retained outputs; they do not launch fresh simulations or reproduce upstream PTM/DXA extraction.
 
-## Contents
+## Scientific scope
 
-The Zenodo archive contains processed paired metrics, grouped statistics, sensitivity analyses, figure-value tables, representative LAMMPS inputs and outputs, Quantum ESPRESSO inputs and final outputs, pseudopotential checksums, convergence records, and analysis and figure-generation scripts. Large regenerable Quantum ESPRESSO scratch files and nonessential raw molecular-dynamics trajectories are excluded as documented in the archive.
+Static reference agreement and protocol-dependent dynamic response are separate checks, not an experimental ranking of dynamic fidelity. Matched cohorts must not be pooled as independent replications. Finite-cell checks do not establish an infinite-dilution limit or a uniquely resolved equilibrium site. Selected structures do not establish persistent defect identity or DFT-to-MD atom mapping.
 
-## Verification
+Sites 08/10 retain a preoptimized starting route followed by QE relaxation and final SCF. Upstream software is not identified or reproduced in the distribution; original detailed provenance is retained separately. The route is not a native QE-only optimization history. See the module documentation for scope and source-reference versus derivative hashes.
 
-After extracting the archive, follow `RUN_WORKFLOW.md`. The fast verification commands are:
+Version 2.0.0 contains no manuscript, paper artwork, complete figure captions, peer-review correspondence, internal working notes, wavefunctions, binary checkpoints or potential payloads.
 
-```bash
-python verify_package.py
-python reproduce_core_results.py
-python reproduce_transfer_audit.py
-```
+## Rights
 
-## Rights and provenance
-
-No blanket license is applied to the mixed archive. Author-created materials and third-party interatomic-potential or pseudopotential files have distinct rights and provenance. Third-party files remain subject to their original terms; see the provenance manifests and included license files in the Zenodo archive.
-
-## Contact
+No blanket license overrides existing third-party terms. See THIRD_PARTY_NOTICES.md and file-level notices. The archive grants no rights to external simulation software or potential files.
 
 Corresponding author: Bai Lin Lü, Liaoning Petrochemical University.
