@@ -4,10 +4,19 @@ Data and analysis index for **Static DFT Agreement and Protocol-Dependent Strain
 
 ## Data releases
 
+- Version 3.0.0: [response and saved-state analysis supplement](https://doi.org/10.5281/zenodo.23438447), nine modules distributed as 62 files, with reassembly and integrity checks.
 - Version 2.0.0: [data and output-based analysis code](https://doi.org/10.5281/zenodo.23331296), eight modules, with archive and member checksums.
 - Version 1.0.0: [historical reproducibility archive](https://doi.org/10.5281/zenodo.21806152). This remains a separate historical record, not duplicated in version 2.0.0.
 
-Use the version-specific DOI for the data actually analyzed. Version 2.0.0 supplements the historical release and does not replace every historical input.
+Use the version-specific DOI for the data actually analyzed. The releases are complementary: version 3.0.0 does not replace the earlier QE/MEAM static-reference modules or the historical archive.
+
+## Version 3.0.0 contents
+
+The supplement covers fixed-reference response cohorts, matched preparation/thermostat/rate controls, input provenance, a bounded reversal-velocity intervention, and selected-state structural analyses. The numerical records belong to distinct cohorts and must not be pooled as independent replications.
+
+Download all 62 files from Zenodo and follow TRANSFER_README.md to reassemble the split archives and check their hashes. Then follow README.md and RUN_WORKFLOW.md. The scripts reanalyse retained outputs or postprocess saved states, including PTM/DXA where specified; they do not run fresh MD/DFT simulations. External software dependencies must be obtained separately.
+
+The matched controls and velocity intervention use one seed and do not fully explain the historical/new baseline difference. Two historical final profiles remain unresolved. The Mg-Nd geometry derivative excludes 866 unresolved auxiliary vector records; those fields are not certified. See each module for definitions, exclusions and tolerances.
 
 ## Version 2.0.0 contents
 
@@ -21,7 +30,7 @@ Static reference agreement and protocol-dependent dynamic response are separate 
 
 Sites 08/10 retain a preoptimized starting route followed by QE relaxation and final SCF. Upstream software is not identified or reproduced in the distribution; original detailed provenance is retained separately. The route is not a native QE-only optimization history. See the module documentation for scope and source-reference versus derivative hashes.
 
-Version 2.0.0 contains no manuscript, paper artwork, complete figure captions, peer-review correspondence, internal working notes, wavefunctions, binary checkpoints or potential payloads.
+Versions 2.0.0 and 3.0.0 contain no manuscript, paper artwork, complete figure captions, peer-review correspondence, internal working notes, wavefunctions, binary checkpoints or potential payloads.
 
 ## Rights
 
