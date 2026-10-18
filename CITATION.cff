@@ -2,9 +2,9 @@ cff-version: 1.2.0
 message: "Please cite the version-specific Zenodo record for the data used."
 title: "Data and analysis code for Static DFT Agreement and Protocol-Dependent Strain-Reversal Response in Mg–Y Interatomic Potentials"
 type: dataset
-version: 2.0.0
-doi: 10.5281/zenodo.23331296
-date-released: 2026-10-13
+version: 3.0.0
+doi: 10.5281/zenodo.23438447
+date-released: 2026-10-18
 authors:
   - family-names: Shang
     given-names: Jia Bao
